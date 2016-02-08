@@ -1,9 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @todo_item.description %>
-</p>
 
-<%= link_to 'Edit', edit_todo_item_path(@todo_item) %> |
-<%= link_to 'Back', todo_items_path %>
+  <h1><strong>My Task:</strong>
+  <%= @todo_item.description %> </h1>
+
+<h3>
+<%= link_to 'Edit', edit_todo_item_path(@todo_item), :class =>'button' %> |
+ <%= link_to 'Back', todo_items_path, :class => 'button' %> 
+</h3>
